@@ -1,18 +1,23 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 /**
- *main - prints the alphabet in lowercase,
- * followed by a new line
+ * main - countdown of alphabets
+ * from a - z separated by newline
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-    char ch;
+	int n;
 
-    for (ch = 'a'; ch <= 'z'; ch ++)
-    {
-        putchar(ch);
-    }
-    putchar('\n');
-    return (0);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	
+	for (n = 'a'; n = 'z'; n++)
+		putchar(n);
+		putchar('\n');
+		getch();
+
+	return (0);
 }
