@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include "_putchar"
+#include "_putchar.h"
 
 /**
  * main - Check description
@@ -8,12 +8,12 @@
  */
 int main(void)
 {
-	char word[8] = "_putchar";
-	int i;
+        char word[8] = "_putchar";
+        int i;
 
-	for (i = 0; i < 8; i++)
-		_putchar(word[i]);
-	_putchar('\n');
+        for (i = 0; i < 8; i++)
+                _putchar(word[i]);
+        _putchar('\n');
 
-	return (0);
+        return (0);
 }
